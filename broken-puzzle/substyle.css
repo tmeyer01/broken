@@ -1,0 +1,186 @@
+p {
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.2rem;
+}
+
+.placeholder {
+  text-align: center;
+  color: #8f6c56;
+}
+
+.sub_main {
+  margin: auto;
+}
+
+.featured img {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.sub_heading {
+  margin-left: 10%;
+  position: relative;
+}
+
+header {
+  margin-bottom: 2%;
+}
+
+.description {
+  width: 90%;
+}
+
+h3 {
+  margin-left: 10%;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.examples {
+  margin-top: 2%;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  width: 80%;
+}
+
+table,
+tr,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+tr,
+td {
+  padding: 2%;
+}
+
+.puzzle_room {
+  margin: auto;
+  text-align: center;
+}
+
+.puzzle_room img {
+  width: 35%;
+}
+
+.contact_form {
+  display: block;
+  margin: 10% auto;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-left: 3%;
+}
+
+fieldset {
+  border: none;
+  padding: 1%;
+  margin-left: 13%;
+}
+
+textarea {
+  width: 70vw;
+  height: 20vh;
+  /*border:1px solid lightgrey;*/
+}
+
+.submit {
+  display: block;
+  margin-left: 15%;
+  margin-top: 1%;
+}
+
+.author {
+  padding-top: 10%;
+  width: 100%;
+  font-size: 1rem;
+  color: darkslateblue;
+  text-align: left;
+  padding-left: 10%;
+}
+
+.main-img {
+  width: 100px;
+  height: auto;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .description {
+    display: block;
+    float: left;
+    margin-left: 17%;
+    width: 30%;
+    padding: 1%;
+  }
+
+  .featured {
+    text-align: center;
+  }
+
+  .featured img {
+    width: 60%;
+  }
+
+  .examples {
+    float: right;
+    width: 30%;
+    margin-right: 18%;
+  }
+
+  sup {
+    font-size: 0.5rem;
+  }
+
+  .inline {
+    display: inline;
+  }
+
+  .puzzle_room {
+    width: 48%;
+    float: left;
+  }
+
+  .puzzle_room img {
+    width: 30%;
+    display: block;
+    margin-left: 58%;
+    margin-bottom: 1%;
+  }
+
+  .contact_form {
+    margin: auto;
+    padding: 1%;
+  }
+
+  fieldset {
+    border: none;
+    padding: 1%;
+    margin-left: 53%;
+  }
+
+  label {
+    margin-left: 0%;
+  }
+
+  .submit {
+    display: block;
+    margin-left: 55%;
+    margin-top: 1%;
+  }
+
+  textarea {
+    width: 20rem;
+    height: 20vh;
+  }
+
+  /*#E7685D*/
+}

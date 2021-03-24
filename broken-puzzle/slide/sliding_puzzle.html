@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	 <title>Sliding Puzzle</title>
+
+    <style type="text/css">
+
+    	body
+    	{
+    		background-color: wheat;
+    	}
+
+    	h1, p
+    	{
+    		text-align: center;
+    		font-family: "Helvetica", san-serif;
+ 			margin:3% 0;
+ 			color:darkslateblue;
+    	}
+
+    	.puzzle
+    	{
+    		margin:auto;
+    		text-align: center;
+    		border:3px solid darkslateblue;
+    		width:500px;
+    		padding:2rem 2rem;
+    	}
+
+    	img
+    	{
+    		margin:.04em .12em;
+    		line-height: 0;
+    	}
+
+    </style>
+
+	<script type="text/javascript">
+
+		var pieces = new Array(16);
+		var blank = 15; //void square in the puzzle
+
+		function start()
+		{
+			var shuffle = document.getElementById("play");
+			shuffle.addEventListener("click", shuffleImg, false);
+
+			var solve = document.getElementById("solve");
+			solve.addEventListener("click", solvePuzzle, false);
+		}
+
+
+		function shuffleImg() //shuffle the whole puzzle
+		{
+			for ( var i=0; i < 500; i++)
+			{
+				var num = Math.floor(Math.random()*16);
+				movePieces(document.images[num]);
+			}
+		}
+
+		function movePieces(img) //swap the pieces on click
+		{
+			var neighbors = new Array(4); //surrounding pieces of clicked piece
+			var number = parseInt(img.name);
+
+			neighbors[0] = number - 4; //above the clicked piece
+			neighbors[1] = number + 4; //below the clicked piece
+			if ((number % 4) != 0)
+			{
+				neighbors[2] = number -1; //left of the clicked piece
+			}
+			if ((number % 4) != 3)
+			{
+				neighbors[3] = number + 1; //right of the clicked piece
+			}
+
+			for ( var i = 0; i < 4; i++)
+				if (neighbors[i] == blank)
+				{
+					exchange(img, document.images[neighbors[i]]);
+					blank = number;
+				}//checking if the piece next to the clicked piece is blank
+		}
+
+		function solvePuzzle()
+		{
+			//image line up by its name's corresponding position
+			var puzzle = document.getElementById("puzzle");
+
+			for ( var i = 0; i < 4; ++i )
+			{
+				pieces[i] = i;
+				puzzle.innerHTML += '<img src="images/' + pieces[i] + '.jpg">';
+			}
+
+			puzzle.innerHTML += "<br>";
+
+			for (var i = 4; i < 8; ++i)
+			{
+				pieces[i] = i;
+				puzzle.innerHTML += '<img src="images/' + pieces[i] + '.jpg">';
+			}
+
+			puzzle.innerHTML += "<br>";
+
+			for (var i = 8; i < 12; ++i)
+			{
+				pieces[i] = i;
+				puzzle.innerHTML += '<img src="images/' + pieces[i] + '.jpg">';
+			}
+
+			puzzle.innerHTML += "<br>";
+
+			for (var i = 12; i < 15; ++i)
+			{
+				pieces[i] = i;
+				puzzle.innerHTML += '<img src="images/' + pieces[i] + '.jpg">';
+			}
+
+			puzzle.innerHTML += '<img src="images/blank.jpg"><br>';
+
+		}
+
+		function exchange(img1, img2) //swap the piece
+		{
+			var placeholder = img1.src;
+			img1.src = img2.src;
+			img2.src = placeholder;
+		}
+
+		window.addEventListener("load", start, false);
+
+	</script>
+	</head>
+
+	<body>
+		<h1>VAMIS at Orpheum Sliding Puzzle</h1>
+		<div id = "puzzle" class="puzzle">
+			<img src="images/0.jpg" name="0" onclick="movePieces(this)"><!-- 
+			 --><img src="images/1.jpg" name="1" onclick="movePieces(this)"><!-- 
+			 --><img src="images/2.jpg" name="2" onclick="movePieces(this)"><!-- 
+			 --><img src="images/3.jpg" name="3" onclick="movePieces(this)">
+			<br><!-- 
+			 --><img src="images/4.jpg" name="4" onclick="movePieces(this)"><!-- 
+			 --><img src="images/5.jpg" name="5" onclick="movePieces(this)"><!-- 
+			 --><img src="images/6.jpg" name="6" onclick="movePieces(this)"><!-- 
+			 --><img src="images/7.jpg" name="7" onclick="movePieces(this)">
+			<br><!-- 
+			 --><img src="images/8.jpg" name="8" onclick="movePieces(this)"><!-- 
+			 --><img src="images/9.jpg" name="9" onclick="movePieces(this)"><!-- 
+			 --><img src="images/10.jpg" name="10" onclick="movePieces(this)"><!-- 
+			 --><img src="images/11.jpg" name="11" onclick="movePieces(this)"><!-- 
+			 --><br><!-- 
+			 --><img src="images/12.jpg" name="12" onclick="movePieces(this)"><!-- 
+			 --><img src="images/13.jpg" name="13" onclick="movePieces(this)"><!-- 
+			 --><img src="images/14.jpg" name="14" onclick="movePieces(this)"><!-- 
+			 --><img src="images/blank.jpg" name="15" onclick="movePieces(this)">
+			
+			<form action = "#">
+				<input id = "play" type="button" value="Play">
+ 				<input id = "solve" type="button" value="Show Solution">
+			</form>
+
+			<p>Click Play to start the game.
+			</p>
+			<p>Click Show Solution to see the completed image.
+			</p>
+		</div>
+
+	</body>
+
+
+</html>

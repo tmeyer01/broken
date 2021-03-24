@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Puzzle Weekly</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://use.fontawesome.com/98a81d9920.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+      $(document).ready(function() 
+      {
+        $('section div').hover(function() 
+        {
+            $(this).fadeTo(0, 0.7).fadeTo('normal', 1.0);
+        },
+          function() 
+          {
+            $(this).fadeTo('fast', 1.0);
+          }
+        );
+      });
+
+
+</script>
+
+  </head>
+
+  <body class="index_body">
+
+    <header>
+
+      <div class="header_content clearfix">
+        <form method="post" action="http://webdevbasics.net/scripts/demo.php">
+          <div class="search">
+          <label class="visually-hidden" for="search">Search</label>
+          <input id = "search" name="search" type = "search" placeholder="search" class="search_form">
+          <button type="submit" class="search_button">
+            <i class="fa fa-search" aria-hidden="true">
+            <span class="visually-hidden">search</span>
+            </i>
+            </button>
+            </div>   
+        </form> 
+
+      <nav class="main_menu">
+        <div class="logo">
+          <img src="images/logo.png" alt="logo">
+        </div>
+        <ul class="clearfix">
+          <li><a href="index.html">The World of Puzzles</a></li>
+          <li><a href="crypto.html">Crypto Puzzles</a></li>
+          <li><a href="match.html">Match Puzzles</a></li>
+          <li><a href="riddle.html">Riddle Puzzles</a></li>
+          <li><a href="word.html">Word Puzzles</a></li>
+          <li><a href="picture.html">Picture Puzzles</a></li>
+        </ul>
+      </nav>
+
+        <h1>The World of Puzzles</h1>
+        <div class="teaser">
+          Puzzles are fun. They bring people together. Young and old alike enjoy their brain teased and twisted. Explore different types of puzzles and find your favorite!
+        </div>
+      </div>
+
+    </header>
+  	
+    <main class="top_main">
+      <section class="clearfix">
+        <div class ="right">
+          <a href="crypto.html">
+           <h2 class="index_h2">Crypto Puzzles</h2>
+            <img id="crypto" src="images/crypto.png" alt="crypto Puzzles">
+          </a>
+          <p>Decipher, break and penetrate the code. Everyone's favorite especially when a treasure box is involved.</p>
+        </div>
+        <div class ="left">
+          <a href="match.html">
+            <h2 class="index_h2">Match Puzzles</h2>
+            <img src="images/match.png" alt="Match Puzzles">
+          </a>
+          <p>Mom said not to play with matches? You can with these matches. All you need to do is to make the equation correct by moving one matchstick. It requires just one click!</p></div>
+        <div class ="right">
+          <a href="riddle.html">
+            <h2 class="index_h2">Riddle Puzzles</h2>
+            <img src="imagesw/riddle.png" alt="Riddle Puzzles">
+          </a>
+          <p>Is riddle a puzzle? The answer is yes! Remember Hermione used a logic to solve a riddle prepared by the potion's master in the first book of Harry Potter?</p></div>
+        <div class ="left">
+          <a href="word.html">
+            <h2 class="index_h2">Word Puzzles</h2>
+            <img src="images/word.png" alt=" Word Puzzles">
+          </a>
+          <p>Crossword, word search or Boggles, they are everywhere. But that doesn't mean they are easier. Actually, they could be one of the hardest.</p></div>
+        <div class ="right">
+          <a href="picture.html">
+            <h2 class="index_h2">Picture Puzzles</h2>
+            <img src="images/picture.png" alt="Picture Puzzles">
+          </a>
+          <p>Sometimes it is more about patience and perseverance when it comes to picture puzzles. But it can give you great sense of achievement. </p></div>
+      </section>
+
+    </main>
+
+  
+  <footer>     
+    <nav>
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i><span class="visually-hidden">Facebook</span></a></li>
+        <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i><span class="visually-hidden">Twitter</span></a></li>
+        <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i><span class="visually-hidden">Instagram</span></a></li>
+        <li><a href="sources.html">Sources</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  </body>
+</html>
+
+
+

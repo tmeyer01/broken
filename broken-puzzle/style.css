@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|IM+Fell+English");
+
+html {
+  font-family: "Cormorant Garamond", serif;
+  /*background-image: url(images/1x/piecespattern1.png);*/
+  background-image: url(images/puzzlepattern.png);
+}
+
+body {
+  margin: 0;
+}
+
+.logo {
+  width: 20%;
+  margin: 2% auto;
+  display: block;
+  background-color: white;
+}
+
+header nav ul {
+  text-align: center;
+  padding: 2% 0;
+  background-color: #e7685d;
+  margin: 0;
+}
+
+header nav ul li {
+  padding: 0.2rem 0;
+  border-bottom: 1px solid #fff1e4;
+  margin: 0 20%;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+header nav ul li:first-of-type {
+  border-top: 1px solid #fff1e4;
+}
+
+ul li a:link {
+  color: #fff1e4;
+  text-decoration: none;
+}
+
+ul li a:visited {
+  color: #454545;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+ul li a:active {
+  color: #fcdd7c;
+}
+
+section div a {
+  text-decoration: none;
+}
+
+header {
+  margin-bottom: 3%;
+}
+
+form {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 3rem 0;
+  font-family: "IM Fell English", serif;
+  font-size: 3rem;
+  color: #8f6c56;
+}
+
+.teaser {
+  margin: 0 8%;
+  font-size: 1.2rem;
+  color: #8f6c56;
+}
+
+main {
+  margin: auto;
+  text-align: center;
+}
+
+section div {
+  width: 100%;
+  padding-bottom: 3%;
+  text-align: center;
+  position: relative;
+}
+
+.index_h2 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 10%;
+  color: #8f6c56;
+  text-decoration: none;
+}
+
+section div p {
+  width: 70%;
+  text-align: left;
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  color: #8f6c56;
+}
+/* 
+img {
+  width: 80%;
+} */
+
+p {
+  font-size: 4vw;
+}
+
+footer {
+  background-color: #e7685d;
+}
+
+footer nav ul {
+  text-align: center;
+  padding: 3% 0;
+}
+
+footer nav ul li {
+  list-style: none;
+  margin: 1rem;
+  display: inline-block;
+}
+
+i {
+  color: #fcdd7c;
+}
+
+footer nav ul li i {
+  position: relative;
+  bottom: -5px;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    margin: 0;
+    /*		background:linear-gradient(to right,  #e7685D 20%, #ffffff 20%, #ffffff 80%, #e7685D 80%, #e7685D 100%);*/
+  }
+
+  header {
+    padding-bottom: 10vh;
+  }
+
+  .index_body {
+    background: url(images/borderb.png) repeat-y center center;
+    min-height: 300px;
+    width: 100%;
+  }
+
+  form {
+    text-align: right;
+    display: inline;
+  }
+
+  .search {
+    margin-bottom: 0.5%;
+    padding-right: 3%;
+    margin-top: 0.2rem;
+  }
+
+  h1 {
+    float: left;
+    margin-left: 14%;
+    margin-top: 20vh;
+    /*margin-bottom:5rem;*/
+    padding-right: 2%;
+    width: 30%;
+    /*display:block;*/
+    font-size: 3.5rem;
+    letter-spacing: 0.5rem;
+    text-align: right;
+    line-height: 1.4;
+    font-family: "IM Fell English", serif;
+  }
+
+  .teaser {
+    width: 26%;
+    margin-left: 52%;
+    margin-top: 25vh;
+  }
+
+  .main_menu {
+    /*background-color:#F7E2BB;*/
+    background-color: #e7685d;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99999;
+    width: 3.8%;
+    padding-top: 1em;
+    background-color: transparent;
+  }
+
+  .main_menu ul {
+    margin: 0;
+    padding: 1.4rem 0;
+  }
+
+  .main_menu ul li {
+    list-style: none;
+    width: 16.6%;
+    float: left;
+    border: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    /*font-family:"IM Fell English", serif;*/
+  }
+
+  header nav ul li:first-of-type {
+    border: none;
+  }
+
+  .search_form {
+    width: 25%;
+    padding-bottom: 1%;
+  }
+
+  .search_button {
+    border: none;
+  }
+
+  button i {
+    color: #8f6c56;
+  }
+
+  .top_main {
+    margin-top: 18rem;
+  }
+
+  section div {
+    width: 25%;
+    position: relative;
+  }
+
+  /* img {
+    width: 100%;
+  } */
+
+  a {
+    display: block;
+  }
+
+  .right {
+    float: right;
+    margin-left: 50%;
+    margin-right: 24%;
+    position: relative;
+    margin-top: -15%;
+    /*		text-align:left;*/
+  }
+
+  .left {
+    float: left;
+    margin-right: 50%;
+    margin-left: 24%;
+    position: relative;
+    margin-top: -15%;
+    /*		text-align:right;*/
+  }
+
+  section div p {
+    width: 90%;
+    font-size: 1.3vw;
+  }
+
+  .right h2 {
+    position: absolute;
+    top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    /*text-align: center;*/
+    font-size: 1.5rem;
+    font-family: "IM Fell English", serif;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+
+  .left h2 {
+    position: absolute;
+    top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    /*text-align: center;*/
+    font-size: 1.5rem;
+    font-family: "IM Fell English", serif;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+
+  .right p {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    margin-left: 0;
+  }
+
+  .left p {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  footer {
+    margin-top: 10%;
+    background-color: #e7685d;
+  }
+
+  footer nav ul {
+    padding: 8% 0;
+  }
+
+  footer nav ul li {
+    list-style: none;
+    float: left;
+    font-size: 1.2rem;
+    width: 20%;
+    margin: 0;
+  }
+
+  footer nav ul li i {
+    text-decoration: none;
+    color: #fcdd7c;
+    position: relative;
+    bottom: 8px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/*https://webaim.org/techniques/css/invisiblecontent/*/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*https://css-tricks.com/snippets/css/clear-fix/*/
